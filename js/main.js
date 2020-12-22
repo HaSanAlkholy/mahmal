@@ -141,7 +141,7 @@ $(window).on('load', function () {
       },
       // when window width is >= 150px
       150: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       }
     },
 
