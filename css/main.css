@@ -547,6 +547,10 @@ ul {
     top: 10px;
     right: 10px;
   }
+  .product .product-disc .product-btns .cart {
+    background-color: #663630;
+    color: white;
+  }
 }
 
 .product-slider {
@@ -779,6 +783,13 @@ nav .nav-bottom .c2 {
   justify-content: space-between;
 }
 
+@media (max-width: 576px) {
+  nav .nav-bottom .c2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 nav .nav-bottom .nav-logo {
   text-align: start;
 }
@@ -789,8 +800,14 @@ nav .nav-bottom .nav-logo img {
 
 @media (max-width: 1200px) {
   nav .nav-bottom .nav-logo {
-    max-width: 40%;
+    max-width: 55%;
     text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  nav .nav-bottom .nav-logo {
+    margin-bottom: 15px;
   }
 }
 
@@ -991,6 +1008,7 @@ nav .nava-container {
 @media (max-width: 1200px) {
   nav .nava-container {
     background-color: unset;
+    padding: unset;
   }
 }
 
@@ -1477,6 +1495,12 @@ header img {
   left: -13px;
 }
 
+@media (max-width: 576px) {
+  #banners .banners-head {
+    margin-bottom: 30px;
+  }
+}
+
 #banners .banners-content {
   display: flex;
   justify-content: space-between;
@@ -1528,6 +1552,12 @@ header img {
   #banners .banners-content .banner {
     width: 47%;
     text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  #banners .banners-content .banner {
+    margin-bottom: 20px;
   }
 }
 
@@ -1907,10 +1937,10 @@ footer .footer-top .footer-logo p {
 @media (max-width: 992px) {
   footer .footer-top .footer-logo {
     max-width: 80%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   footer .footer-top .footer-logo img {
-    margin: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -1931,6 +1961,12 @@ footer .footer-top .head h4 i {
 @media (max-width: 992px) {
   footer .footer-top .head h4 i {
     display: inline;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .footer-top .head h4 {
+    margin-bottom: 15px;
   }
 }
 
@@ -2002,7 +2038,7 @@ footer .footer-top .mail .form-group a {
   transition: all 0.5s;
   position: absolute;
   top: 50%;
-  left: 30px;
+  left: 24px;
   transform: translate(-50%, -50%);
 }
 
@@ -2031,6 +2067,13 @@ footer .footer-top .mail .form-group input {
 footer .footer-top .mail .form-group input::placeholder {
   font-size: 14px;
   color: #b8b8b8;
+}
+
+@media (max-width: 576px) {
+  footer .footer-top .mail .form-group {
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
 
 footer .footer-top .mail .social {
@@ -2086,13 +2129,10 @@ footer .credit .fa-heart {
   }
   footer .credit p {
     width: 100%;
-  }
-  footer .credit p:nth-last-of-type(1) {
     text-align: center;
   }
   footer .credit p:nth-of-type(1) {
     margin: 10px 0;
-    margin-top: 40px;
   }
 }
 
